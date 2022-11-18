@@ -1,6 +1,6 @@
 package ru.avm.ex312.dao;
 
-import ru.avm.ex312.models.Person;
+import ru.avm.ex312.model.Person;
 
 import java.util.List;
 

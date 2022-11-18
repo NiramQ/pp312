@@ -1,4 +1,4 @@
-package ru.avm.ex312.models;
+package ru.avm.ex312.model;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;

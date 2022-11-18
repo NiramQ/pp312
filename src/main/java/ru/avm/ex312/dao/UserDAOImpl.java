@@ -1,7 +1,7 @@
 package ru.avm.ex312.dao;
 
 import org.springframework.stereotype.Component;
-import ru.avm.ex312.models.Person;
+import ru.avm.ex312.model.Person;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

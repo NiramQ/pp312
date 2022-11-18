@@ -1,9 +1,9 @@
-package ru.avm.ex312.services;
+package ru.avm.ex312.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.avm.ex312.dao.UserDAO;
-import ru.avm.ex312.models.Person;
+import ru.avm.ex312.model.Person;
 
 import java.util.List;
 

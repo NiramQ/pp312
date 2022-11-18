@@ -1,10 +1,10 @@
-package ru.avm.ex312.controllers;
+package ru.avm.ex312.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.avm.ex312.models.Person;
-import ru.avm.ex312.services.UserService;
+import ru.avm.ex312.model.Person;
+import ru.avm.ex312.service.UserService;
 
 @Controller
 @RequestMapping("/")
@@ -23,13 +23,13 @@ public class UserController {
     }
 
     @GetMapping("new")
-    public String getNewPerson(Model model) {
+    public String getFormSavePerson(Model model) {
         model.addAttribute("user", new Person());
         return "new";
     }
 
     @PostMapping("new")
-    public String setNewPerson(@ModelAttribute("user") Person user) {
+    public String saveNewPerson(@ModelAttribute("user") Person user) {
         userService.saveUser(user);
         return "redirect:/";
     }
